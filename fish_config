@@ -27,6 +27,7 @@ export TERM=xterm-256color
 #export LESS='-R --mouse --wheel-lines=3'
 alias gs "git status"
 alias gd "git diff"
+
 # 7. Start Wayland at login
 if status is-login
 	set TTY (tty)
@@ -55,6 +56,7 @@ if status is-login
 	if test -z "$DISPLAY"; and test $TTY = "/dev/tty2"
 		export LANG=zh_CN.UTF-8
 		export XDG_SESSION_TYPE=X11
+		export DEEPIN_WINE_SCALE=0.8
 		#export MOZ_ENABLE_WAYLAND=1 MOZ_WEBRENDER=1 
 		#foxitreader need QT_QPA_PLATFORM=xcb
 		export QT_QPA_PLATFORM=xcb
