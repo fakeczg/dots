@@ -216,7 +216,13 @@ exec_always --no-startup-id compton
 # Screenshots
 bindsym F2 exec flameshot gui
 
+# call up wechat window
 bindsym F3 exec call_up_wechat.sh
+
+# i3lock: i3lock-color + i3lock-fancy
+bindsym $mod+ctrl+l exec i3lock-fancy
+
+
 
 
 # Start i3bar to display a workspace bar (plus the system information i3status
