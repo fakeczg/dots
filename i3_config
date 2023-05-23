@@ -13,7 +13,9 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:monospace 8
+#font pango:monospace 8
+font pango:Noto Momo, Noto Scans Mono CJK SC 8
+#font pango:Source Code Pro 8,DejaVu Sans Mono 8
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -215,9 +217,10 @@ exec_always --no-startup-id compton
 
 # Screenshots
 bindsym F2 exec flameshot gui
+#flameshot to pin pictures by F3
 
 # call up wechat window
-bindsym F3 exec call_up_wechat.sh
+bindsym F4 exec call_up_wechat.sh
 
 # i3lock: i3lock-color + i3lock-fancy
 bindsym $mod+ctrl+l exec i3lock-fancy
