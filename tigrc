@@ -1,0 +1,17 @@
+# https://github.com/jtheoof/dotfiles/blob/master/.tigrc
+# }}}
+# Colors {{{
+color cursor yellow blue
+color status white default
+color title-focus white blue
+color title-blur white default
+color date yellow default
+color author red default bold
+color main-head magenta default
+color main-tag magenta default
+color stat-staged green default
+color stat-unstaged red default
+color stat-untracked yellow default
+color tree.header white default
+color tree.directory cyan default
+# }}}
