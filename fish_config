@@ -31,7 +31,7 @@ alias gd "git diff"
 # 7. Start Wayland at login
 if status is-login
 	set TTY (tty)
-	if test -z "$DISPLAY"; and test $TTY = "/dev/tty1"
+	if test -z "$DISPLAY"; and test $TTY = "/dev/tty2"
 		export LANG=zh_CN.UTF-8
 		export XDG_SESSION_TYPE=wayland
 		export MOZ_ENABLE_WAYLAND=1 MOZ_WEBRENDER=1 
@@ -53,7 +53,7 @@ if status is-login
 		#LIBVA_DRIVER_NAME=iHD
 		exec sway > /dev/null 2>&1
 	end
-	if test -z "$DISPLAY"; and test $TTY = "/dev/tty2"
+	if test -z "$DISPLAY"; and test $TTY = "/dev/tty1"
 		export LANG=zh_CN.UTF-8
 		export XDG_SESSION_TYPE=X11
 		export DEEPIN_WINE_SCALE=0.8
